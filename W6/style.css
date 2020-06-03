@@ -1,0 +1,32 @@
+div {
+  margin: 20px;
+  width: 540px;
+  height: 420px;
+  background-color: orange;
+}
+
+div.test {
+  border-radius: 900px 90px 90px;
+}
+
+div.test1 {
+  width: 940px;
+  border-radius: 270px / 210px;
+}
+
+div.test2 {
+  width: 400px;
+  border-radius: 50% / 100% 100% 0 0;
+}
+
+div.test3 {
+  border-radius: 100% / 100%  100% 0 0;
+}
+
+div.test4 {
+  border-radius: 50% / 100%  100% 0 0;
+}
+
+div.test4:hover {
+  border-radius: 50%;
+}

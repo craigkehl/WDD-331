@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #face {
+      fill: #fecdbc;
+    }
+
+    #l-brow {
+      transform: rotate(-3deg);
+    }
+
+    #r-brow {
+      transform: rotate(3deg);
+    }
+
+    #l-cheek,
+    #nose {
+      transform: rotate(-29deg);
+    }
+
+    #r-cheek {
+      transform: rotate(29deg);
+    }
+
+    #eyes {
+      fill: white;
+    }
+
+    #pupils {
+      fill: black;
+    }
+
+    #mouth {
+      stroke: black;
+      stroke-width: 3;
+    }
+
+    #cross {
+      stroke: #e67d37;
+      stroke-width: 50;
+      stroke-dasharray: 2, 3, 2;
+    }
+
+    #criss {
+      stroke: #79311f;
+      stroke-width: 40;
+      stroke-dasharray: 10, 6;
+    }
+  </style>
+</head>
+
+<body>
+  <svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="Disney" width="100" height="100" x="0" y="0" patternUnits="userSpaceOnUse">
+        <g id=criss>
+          <line x1="0" y1="0" x2="0" y2="100" />
+          <line x1="50" y1="0" x2="50" y2="100" />
+          <line x1="99" y1="0" x2="99" y2="100" />
+        </g>
+        <g id=cross>
+          <line x1="0" y1="0" x2="100" y2="100" />
+          <line x1="100" y1="0" x2="0" y2="100" />
+        </g>
+        <g id="Mickey">
+          <g id="head">
+            <circle cx="50" cy="60" r="36" fill="black" />
+          </g>
+          <g id="left-ear">
+            <circle cx="20" cy="20" r="18" fill="black" />
+          </g>
+          <g id="right-ear">
+            <circle cx="80" cy="20" r="18" fill="black" />
+          </g>
+          <g id="face">
+            <ellipse id="l-brow" cx="41" cy="56" rx="14" ry="26" />
+            <ellipse id="r-brow" cx="59" cy="51" rx="14" ry="26" />
+            <ellipse id="l-cheek" cx="16" cy="103" rx="24" ry="14" />
+            <ellipse id="r-cheek" cx="69" cy="55" rx="24" ry="14" />
+          </g>
+          <g id="eyes">
+            <ellipse id="l-eye" cx="40" cy="54" rx="8" ry="20" />
+            <ellipse id="r-eye" cx="58" cy="51" rx="8" ry="20" />
+            <g id="pupils">
+              <ellipse id="l-pupil" cx="37" cy="57" rx="4" ry="8" />
+              <ellipse id="r-pupil" cx="57" cy="57" rx="4" ry="8" />
+            </g>
+          </g>
+          <g id="nose">
+            <ellipse cx="12" cy="96" rx="10" ry="8" />
+            <path id="mouth" d="M -12 95 q 18 26 26 18" />
+          </g>
+        </g>
+      </pattern>
+    </defs>
+
+    <rect class="card-one" width="400" height="600" x="0" y="0" fill="url(#Disney)" />
+  </svg>
+  <!-- <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="Gradient1">
+        <stop offset="5%" stop-color="white"/>
+        <stop offset="95%" stop-color="blue"/>
+      </linearGradient>
+      <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="5%" stop-color="red"/>
+        <stop offset="95%" stop-color="orange"/>
+      </linearGradient>
+  
+      <pattern id="Pattern" x="0" y="0" width=".25" height=".25">
+        <rect x="0" y="0" width="50" height="50" fill="skyblue"/>
+        <rect x="0" y="0" width="25" height="25" fill="url(#Gradient2)"/>
+        <circle cx="25" cy="25" r="20" fill="url(#Gradient1)" fill-opacity="0.5"/>
+      </pattern>
+    </defs>
+  
+    <rect fill="url(#Pattern)" stroke="black" width="200" height="200"/>
+  </svg> -->
+
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <g id="grad1">
+        <radialGradient cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+          <stop offset="0%" style="stop-color:rgb(235, 14, 14); stop-opacity:0" />
+          <stop offset="20%" style="stop-color:rgb(0,0,255);stop-opacity:.2" />
+        </radialGradient>
+        <radialGradient cx="50%" cy="50%" r="50%" fx="25%" fy="75%">
+          <stop offset="0%" style="stop-color:rgb(235, 14, 14); stop-opacity:0" />
+          <stop offset="95%" style="stop-color:rgb(0,155,255);stop-opacity:.35" />
+        </radialGradient>
+        <radialGradient cx="50%" cy="50%" r="50%" fx="75%" fy="25%">
+          <stop offset="0%" style="stop-color:rgb(235, 14, 14); stop-opacity:0" />
+          <stop offset="20%" style="stop-color:rgb(0,0,255);stop-opacity:.2" />
+        </radialGradient>
+        <radialGradient cx="50%" cy="50%" r="50%" fx="25%" fy="75%">
+          <stop offset="0%" style="stop-color:rgb(235, 14, 14); stop-opacity:0" />
+          <stop offset="95%" style="stop-color:rgb(0,155,255);stop-opacity:.35" />
+        </radialGradient>
+
+
+      </g>
+      <pattern id="Dizzy" width="10" height="10" x="0" y="0" patternUnits="userSpaceOnUse">
+        <g id=criss>
+          <line x1="0" y1="0" x2="0" y2="100" />
+          <line x1="50" y1="0" x2="50" y2="100" />
+          <line x1="99" y1="0" x2="99" y2="100" />
+        </g>
+        <g id=cross>
+          <line x1="0" y1="0" x2="100" y2="100" />
+          <line x1="100" y1="0" x2="0" y2="100" />
+        </g>
+      </pattern>
+    </defs>
+
+    <rect class="card-one" x="0" y="0" rx="15" ry="15" fill="url(#Dizzy)" />
+    <rect class="card-two" x="0" y="0" rx="15" ry="15" fill="url(#grad1)" />
+  </svg>
+
+  <defs>
+    <pattern id="pattern1" patternUnits="userSpaceOnUse" x="0" y="0" width="50" height="50">
+      <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="icon-heart" viewBox="-25 -7 200 200">
+          <path
+            d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z">
+          </path>
+        </symbol>
+      </svg>
+      <svg class="icon icon-heart">
+        <use xlink:href="pattern1">
+      </svg>
+    </pattern>
+  </defs>
+  <rect class="cardTwo" x="375" y="25" ry="15" fill="url(#pattern1)" />
+  </svg>
+
+  <!--  Your SVG needs to be inside the <svg> tags with no other <svg> tags in the middle-->
+  <svg ***code***>
+    <!-- The def block is next -->
+    <defs>
+      <!-- This is where your definitions would go such as your pattern-->
+      <pattern ***code**>
+        <!-- Your shapes for your pattern are inside the pattern tags-->
+        <path *** code***></path>
+      
+      </pattern> <!--Closes this pattern block. If you were doing a second pattern, it would come now after the first.-->
+    
+    </defs> <!-- Closes your definition block-->
+    <!-- Here is where the elements will go that actually get placed on the screen. They could be 
+         Symbol instances, patterns, gradients, ect...-->
+    <rect class="cardTwo" x="375" y="25" ry="15" fill="url(#pattern1)" />
+  </svg> <!-- Here is where you close out this SVG-->
+</body>
+
+</html>

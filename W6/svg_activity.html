@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<svg width="200" height="200"> 
+  <!-- define pattern -->
+  <defs>
+    <pattern id="mypattern" patternUnits="userSpaceOnUse" x="0" y="0" width="50" height="50">
+      <rect x="0" y="0" width="50" rx="10" ry="10" height="50" class="rectangle" /> 
+      <circle cx="25" cy="25" r="8" fill="white" stroke="blue" stroke-width="2" />
+    </pattern>
+  </defs>
+
+  <!-- use pattern in a circle -->
+  <circle cx="100" cy="100" r="100" fill="url(#mypattern)" stroke-width=".1" stroke="grey" />
+</svg>
+
+<svg width="150" height="150"> 
+  <!-- define symbol -->
+  <defs>
+    <symbol id="mySymbol" viewBox="0 0 150 150">
+      <rect x="0" y="0" width="150" rx="10" ry="10" height="150" class="rectangle" fill="pink" stroke="grey" stroke-width="5" /> 
+      <circle cx="75" cy="75" r="30" fill="white" stroke="darkred" stroke-width="2" />
+    </symbol>
+  </defs>
+
+  <!-- use symbol -->
+  <use xlink:href="#mySymbol" ></use>
+</svg>
+<svg width="200" height="200"> 
+  <!-- use symbol -->
+  <use xlink:href="#mySymbol" ></use>
+</svg>
+</body>
+</html>

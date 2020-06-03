@@ -1,0 +1,65 @@
+********* These are the posting in my terminal that I used until I had no errors. *****
+
+craig@Craig-Laptop MINGW64 ~/OneDrive/Documents/education/BYUI/Winter2020/CIT230/Repo/craigkehl.github.io/Salmon_River_Adv (master)
+$ stylelint ./css/*.css
+
+css/large.css
+ 18:3  ×  Unexpected }   CssSyntaxError
+
+css/small.css
+ 208:11  ×  Unexpected unknown unit "%vw"                                                                         unit-no-unknown
+ 430:1   ×  Expected selector ".reservations p" to come before selector "section.activities div div.description   no-descending-specificity 
+            p"
+ 482:1   ×  Expected selector "label.inline input" to come before selector "form label.above input"               no-descending-specificity 
+ 487:1   ×  Expected selector "label.above span" to come before selector "div.guides section div span"            no-descending-specificity 
+ 487:1   ×  Expected selector "label.above span" to come before selector "div.trips_page section div span"        no-descending-specificity 
+ 491:1   ×  Expected selector "form div" to come before selector "div.guides section div"                         no-descending-specificity 
+ 491:1   ×  Expected selector "form div" to come before selector "div.trips_page section div"                     no-descending-specificity 
+ 538:1   ×  Expected selector ".contactInfo h6" to come before selector "div.address h6"                          no-descending-specificity 
+ 538:1   ×  Expected selector ".contactInfo h6" to come before selector "div.electronic h6"                       no-descending-specificity 
+ 538:18  ×  Expected selector ".contactInfo p" to come before selector "section.activities div div.description    no-descending-specificity 
+            p"
+
+
+craig@Craig-Laptop MINGW64 ~/OneDrive/Documents/education/BYUI/Winter2020/CIT230/Repo/craigkehl.github.io/Salmon_River_Adv (master)
+$ stylelint ./css/large.css
+
+css/large.css
+ 18:3  ×  Unexpected }   CssSyntaxError
+
+
+craig@Craig-Laptop MINGW64 ~/OneDrive/Documents/education/BYUI/Winter2020/CIT230/Repo/craigkehl.github.io/Salmon_River_Adv (master)
+$ stylelint ./css/medium.css
+
+craig@Craig-Laptop MINGW64 ~/OneDrive/Documents/education/BYUI/Winter2020/CIT230/Repo/craigkehl.github.io/Salmon_River_Adv (master)
+$ stylelint ./css/small.css
+
+css/small.css
+ 477:1  ×  Expected selector "label.inline input" to come before selector "form label.above input"          no-descending-specificity       
+ 482:1  ×  Expected selector "label.above span" to come before selector "div.guides section div span"       no-descending-specificity       
+ 482:1  ×  Expected selector "label.above span" to come before selector "div.trips_page section div span"   no-descending-specificity       
+ 486:1  ×  Expected selector "form div" to come before selector "div.guides section div"                    no-descending-specificity       
+ 486:1  ×  Expected selector "form div" to come before selector "div.trips_page section div"                no-descending-specificity       
+
+
+craig@Craig-Laptop MINGW64 ~/OneDrive/Documents/education/BYUI/Winter2020/CIT230/Repo/craigkehl.github.io/Salmon_River_Adv (master)
+$ stylelint ./css/small.css
+
+css/small.css
+ 313:1  ×  Expected selector "form div" to come before selector "div.guides section div"                    no-descending-specificity       
+ 489:1  ×  Expected selector "label.above span" to come before selector "div.guides section div span"       no-descending-specificity       
+ 489:1  ×  Expected selector "label.above span" to come before selector "div.trips_page section div span"   no-descending-specificity       
+
+
+craig@Craig-Laptop MINGW64 ~/OneDrive/Documents/education/BYUI/Winter2020/CIT230/Repo/craigkehl.github.io/Salmon_River_Adv (master)
+$ stylelint ./css/small.css
+
+css/small.css
+ 489:1  ×  Expected selector "label.above span" to come before selector "div.guides section div span"       no-descending-specificity       
+ 489:1  ×  Expected selector "label.above span" to come before selector "div.trips_page section div span"   no-descending-specificity       
+
+
+craig@Craig-Laptop MINGW64 ~/OneDrive/Documents/education/BYUI/Winter2020/CIT230/Repo/craigkehl.github.io/Salmon_River_Adv (master)
+$ stylelint ./css/small.css
+
+craig@Craig-Laptop MINGW64 ~/OneDrive/Documents/education/BYUI/Winter2020/CIT230/Repo/craigkehl.github.io/Salmon_River_Adv (master)
